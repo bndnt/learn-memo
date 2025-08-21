@@ -1,5 +1,7 @@
 import { useMemo, useState } from "react";
+
 import Player from "../Player/Player";
+import Modal from "../Modal/Modal";
 import css from "./App.module.css";
 
 function App() {
@@ -17,6 +19,7 @@ function App() {
   );
   return (
     <div>
+      <Modal />
       <Player source={source} />
       <button onClick={() => setClicks(clicks + 1)}>
         Number of clicks:{clicks}
