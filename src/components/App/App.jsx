@@ -1,5 +1,5 @@
 import { useMemo, useState } from "react";
-
+import { UserMenu } from "../UserMenu";
 import Player from "../Player/Player";
 import Modal from "../Modal/Modal";
 import css from "./App.module.css";
@@ -19,6 +19,8 @@ function App() {
   );
   return (
     <div>
+      <h1>Context example</h1>
+      <UserMenu />
       <Modal />
       <Player source={source} />
       <button onClick={() => setClicks(clicks + 1)}>
